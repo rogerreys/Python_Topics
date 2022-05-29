@@ -11,8 +11,9 @@ print(x.strftime("%A"))
 # Creating Date Objects
 print("\n","Creating Date Objects",end="\n")
 y = datetime.datetime(2020, 3, 23)
-print(y)
-
+print("yyyy-MM-dd", y)
+z = datetime.datetime(x.year, x.month, 23, 10,30)
+print("yyyy-MM-dd hh:mm", z)
 
 # The strftime() Method
 # ref: https://www.w3schools.com/python/python_datetime.asp

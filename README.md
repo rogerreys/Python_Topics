@@ -60,3 +60,58 @@
     def myfunc(n):
         return lambda a : a * n
     double = myfunc(n) # Function return lambda
+
+
+# Variable
+
+## Global Keyword
+If you need to create a global variable, but are stuck in the local scope
+
+    def myfunc4():
+    global ab
+    ab = 300
+
+# Date
+
+    import datetime
+
+    x = datetime.datetime.now()
+    print(x.year)
+    print(x.strftime("%A")) 
+
+    # Creating Date Objects
+    y = datetime.datetime(2020, 3, 23)
+    z = datetime.datetime(x.year, x.month, 23, 10,30)
+
+The strftime() Method
+https://www.w3schools.com/python/python_datetime.asp
+
+# Write File
+Additional modes  
+r+ : Reading and writing. Cannot truncate the file.
+w+ : Writing and reading. Truncates the file.
+    opening a file in w+ overwrites it and deletes all pre-existing data
+a+ : Appending and Reading. Creates a new file, if none exists. You dont have to dwell on the specifics of each mode for this lab.
+
+To work with a file on existing data, use r+ and a+
+
+.tell() - returns the current position in bytes
+.seek(offset,from) - changes the position by 'offset' bytes with respect to 'from'. From can take the value of 0,1,2 corresponding to beginning, relative to current position and end
+
+    # Write
+    values = ["First Line A\n", "Second Line B\n", "Third Line C\n"]
+    with open(ruta+"file.txt","w") as fileWrite:
+        for i in values:
+            fileWrite.write(i)
+
+    # Append
+    with open(ruta+"file.txt","a") as fileAppend:
+        print("Value {}".format(fileAppend.tell())) 
+        fileAppend.seek(0,0)
+        fileAppend.write("Line append")
+
+    # Copy File
+    with open(ruta+"file.txt","r") as fileReadable:
+        with open(ruta+"file2.txt","w") as fileCopied:
+            for i in fileReadable:
+                fileCopied.write(i)

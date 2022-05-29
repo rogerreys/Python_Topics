@@ -1,4 +1,4 @@
-ruta = "/home/roger/myPrograms/DEV_SOFT/PYTHON/INTRODUCCION/"
+ruta = "./"
 
 # Write
 values = ["First Line A\n", "Second Line B\n", "Third Line C\n"]
