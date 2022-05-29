@@ -33,6 +33,7 @@ class MyNumbers:
 myclass = MyNumbers()
 myiter = iter(myclass)
 
+print("\nFirst iteration")
 print(next(myiter))
 print(next(myiter))
 print(next(myiter))
@@ -40,6 +41,7 @@ print(next(myiter))
 print(next(myiter))
 
 # StopIteration
+print("\nSecond iteration with limit")
 class StopIte():
     def __iter__(self):
         self.a = 1

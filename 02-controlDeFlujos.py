@@ -52,18 +52,18 @@ print(sum(range(4)))
 print(list(range(2,4)))
 
 #Declaracion break
-print("Declaracion break\n")
+print("\nDeclaracion break")
 for n in range(2, 10):
     for x in range(2, n):
         if n % x == 0:
             print(n, 'equals', x, '*', n//x)
             break
-    else:
-    # loop fell through without finding a factor
-        print(n, 'is a prime number')
+        else:
+        # loop fell through without finding a factor
+            print(n, 'is a prime number')
 
 #Declaracion continue 
-print("\nDeclaracion continue\n")
+print("\nDeclaracion continue")
 for x in range(2,10):
     if x%2 == 0 :
         print("numero par")
@@ -71,12 +71,12 @@ for x in range(2,10):
     print("numero impar")
 
 #SETENCIA PASS
-print("____PASS___")
+print("\n____PASS___")
 #while True:
 #    pass
 
 #DEFINIENDO FUNCIONES
-print("_____FUNCTION_____")
+print("\n_____FUNCTION_____")
 def fib(n):
     a, b = 0,1
     while a<n:
@@ -126,14 +126,3 @@ def f(a, L=[]):
 print(f(1))
 print(f(2))
 print(f(3))
-
-#EJEMPLO3
-def f(a, L=None):
-    if L is None:
-        L = []
-    L.append(a)
-    return L
-
-
-    
-

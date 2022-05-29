@@ -22,7 +22,7 @@ print("hola\mundo\nuevo");
 print(r"hola\mundo\nuevo");
 
     #Se puede agregar multiples lineas
-print("""\
+print("""\n
 PRUEBA CON MULTIPLES LINEAS
 ---------------------------
 Para esta prueba se puede utilizar
@@ -55,7 +55,8 @@ print(cuadricula)
 print(cuadricula[1])
 print(cuadricula[:])
     #concatenar
-cuadricula + [15,16,17]
+cuaMod = cuadricula + [15,16,17]
+print(cuaMod)
     #las listas son mutables (Cambian)
 cubo = [1,8,4,6]
 cubo[2] = 64

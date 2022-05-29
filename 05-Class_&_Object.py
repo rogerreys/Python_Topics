@@ -26,8 +26,8 @@ c = Car("Metro", "Susuki")
 c.myMethod()
 
 # Delete Object Properties
-#del c.nombre
-#c.myMethod() 
+# del c.nombre
+# c.myMethod() 
 
 # Inheritance
 class Moto(Car):

@@ -13,5 +13,5 @@ def myfunc(n):
 n = int(input("valor1\n"))
 m = int(input("valor2\n"))
 
-double = myfunc(n)
+double = myfunc(n) # Function return lambda
 print(double(m))
