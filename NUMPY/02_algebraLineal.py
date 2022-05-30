@@ -2,8 +2,8 @@ separ="--------------\n"
 
 import numpy as np
 
-a = np.array([1,2,3],float)
-b = np.array([0,1,1],float)
+a = np.array([1,2,3], float)
+b = np.array([0,1,1], float)
 
 # Producto de matrices
 # [a11,a12,a13]   [b11,b12,b13]   [(a11*b11 + a12*b21 + a13*b31), (a11*b12 + a12*b22 + a13*b32), (a11*b13 + a12*b23 + a13*b33)]

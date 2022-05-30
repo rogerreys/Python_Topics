@@ -8,7 +8,7 @@ separ="--------------\n"
 # Arreglo
 print("Arreglo",end=separ)
 arreglo = np.array([0,1,2,3,4,5])
-print("\t",arreglo,type(arreglo))
+print("\t", arreglo, type(arreglo))
 
 print("Arreglo Float",end=separ)
 notas = np.array([16,17,19,15,18],dtype=float)

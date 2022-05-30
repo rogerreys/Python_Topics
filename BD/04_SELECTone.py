@@ -5,7 +5,8 @@ cursor = conexion.cursor()
 query = "SELECT * FROM estudiantes"
 cursor.execute(query)
 
+
 estudiante = cursor.fetchone()
-print(estudiante)
+print("Select One\n", estudiante)
 
 cursor.close()

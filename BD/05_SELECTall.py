@@ -7,6 +7,6 @@ cursor.execute("SELECT * FROM estudiantes")
 estudiantes = cursor.fetchall()
 
 for i in estudiantes:
-    print(f"Correo:{i[0]}",f"Edad:{i[3]}")
+    print(f"Correo:{i[0]}", f"\tEdad:{i[3]}")
 
 cursor.close()
