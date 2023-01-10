@@ -1,20 +1,24 @@
 import utils
 
-key, val = utils.get_population()
-print(key, val)
+data = [
+        {
+        'Country': 'Colombia',
+        'Population':300
+        },
+        {
+        'Country': 'Bolivia',
+        'Population':300
+        },
+    ]
 
+def run():
+    key, val = utils.get_population()
+    print(key, val)
 
-countries = [
-    {
-    'Country': 'Colombia',
-    'Population':300
-    },
-    {
-    'Country': 'Bolivia',
-    'Population':300
-    },
-]
+    country = input("Type country=>\n")
 
-country = input("Type country=>\n")
+    print(utils.population_by_country(data, country.title()))  
 
-print(utils.population_by_country(countries, country.title()))
+# Se puede 
+if __name__ == '__main__':
+    run()
