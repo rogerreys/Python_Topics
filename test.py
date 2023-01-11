@@ -1,27 +1,13 @@
+import csv
 import functools as func
-def get_total(orders):
-  # Tu código aquí 👇
-  return func.reduce(lambda count, item: count+item['total'], orders, 0)
-   # return func.reduce(function, sequence, initial)
 
+def read_csv(path):
+  # Tu código aquí
+  with open(path, 'r') as file:
+    text = list(csv.reader(file, delimiter=','))
+    total = func.reduce(lambda count, x: count+int(x[1]), text, 0)
+    print('total ', total)
+  return total
 
-orders = [
-  {
-    "customer_name": "Nicolas",
-    "total": 100,
-    "delivered": True,
-  },
-  {
-    "customer_name": "Zulema",
-    "total": 120,
-    "delivered": False,
-  },
-  {
-    "customer_name": "Santiago",
-    "total": 20,
-    "delivered": False,
-  }
-]
-
-total = get_total(orders)
-print(total)
+response = read_csv('./data.csv')
+print(response)
