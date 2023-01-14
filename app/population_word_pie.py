@@ -1,5 +1,6 @@
 import population
 import charts
+import pandas as pd
 
 def test(iter):
     perce = []
@@ -12,10 +13,12 @@ def test(iter):
         
 
 def run():
-    iter = population.convert('./world_population.csv')
-    keys, values = test(iter)
-    charts.generate_pie_chart(keys, values)
-
+    df = pd.read_csv('./world_population.csv')
+    df = df[df['Continent']=='Africa']
+    countries = df['Country/Territory'].values
+    percentages = df['World Population Percentage'].values
+    # keys, values = test(iter)
+    charts.generate_pie_chart(countries, percentages)
     
 
 if __name__=='__main__':
