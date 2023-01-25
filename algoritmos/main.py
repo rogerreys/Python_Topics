@@ -1,7 +1,8 @@
 
 
 def run():
-    print("")    
+    print("")
 
-if __name__=='__main__':
+
+if __name__ == '__main__':
     run()
