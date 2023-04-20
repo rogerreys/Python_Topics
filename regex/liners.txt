@@ -6,12 +6,20 @@
 12345
 123a45678910
 12345678910as
+12345645678974654613547984
 13453243
 url: https://www.instagram.com/p/BXB4zsUlW5Z/?taken-by=beco.mx
 url: http://instagram.com/p/blablablah
 url: http://itam.mx/test
 http://instagram.com/p/blablablah
-csv1,csv2,csv3,csv4,csv5
+https://github.com/rogerreys/Python_Topics
+https://chat.openai.com/auth/login?next=%2F
+https://regexr.com/
+https://www.freecodecamp.org/news/how-to-format-code-in-markdown/
+https://test.test/ test
+csv1,csv2,csv3,csv4
+4687,1254,1357,4896
+a4s,aw4,aw8,a65
 Rodrigo Jiménez Gutiérrez
 5556581111
 56-58-11-12-90
@@ -21,6 +29,14 @@ esto.es.un.mail+gmail@mail.com
 test@test.com
 anime@hotmail.com
 dominio.com
+esto.es_un.mail@mail.com
+esto.es_un.mail+complejo@mail.com
+dominio.com
+rodrigo.jimenez@yahoo.com.mx
+ruben@starbucks.com
+esto_no$es_email@dominio.com
+no_se_de_internet3@hotmail.com
+
 [LOG ENTRY] [ERROR] The system is unstable
 [LOG ENTRY] [WARN] The system may be down
 [LOG ENTRY] [LOG] Everything is OK
@@ -30,4 +46,32 @@ dominio.com
 [LOG ENTRY] [LOG] [user:@beco] Logged out
 56,58,11,12,90
 56.58.11.12.90
-45 65 84 56 88
+45 65 84 56 88a
+555658
+56-58-11
+56.58.11
+56.78-98
+65 09 87
+76y87r98
+45a65b84e56u88
+555658
+56-58-11
+56.58.11
+56.78-98
+65 09 87
+76y87r98
+45y78-56
+78.87 65
+78 54-56
++521565811
+58-11-11#246
+55-5632-0417
+55256048p123
+55256048e123
+
+-99.205646,19.429707,2275.10
+-99.205581, 19.429652,2275.10
+-99.204654,19.428952,2275.58
+
+-99 12' 34.08"W, 19 34' 56.98"N
+-34 54' 32.00"E, -3 21' 67.00"S
