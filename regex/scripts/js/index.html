@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS & RegEx</title>
+    <script>
+        window.onload = running;
+
+        function running(){
+            document.getElementById("valid").style.visibility = "hidden"
+        }
+
+        // Expresiones Regulares JS
+        function validate(str){
+            console.log(str)
+            if(str.match(/^\w{3,}([\.\_]\w{3,}){0,}@\w{4,}.\w{3,}/)){
+                console.log("Valido")
+                document.getElementById("btn").disabled = false
+                document.getElementById("valid").style.visibility = "hidden"
+            }else{
+                document.getElementById("valid").style.visibility = "visible"
+            }
+        }
+        function send(){
+            alert("Enviado")
+        }
+    </script>
+</head>
+<body>
+    <input id="email" type="text" name="email" placeholder="Email" onkeyup="validate(this.value)">
+    <input id="btn" type="button" value="Enviar" disabled onclick="send()">
+    <p id="valid">No es valido</p>
+</body>
+</html>

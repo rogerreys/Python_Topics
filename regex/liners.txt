@@ -28,6 +28,7 @@ Rodrigo Jiménez Gutiérrez
 esto.es.un.mail+gmail@mail.com
 test@test.com
 anime@hotmail.com
+anime.test@hotmail.com
 dominio.com
 esto.es_un.mail@mail.com
 esto.es_un.mail+complejo@mail.com
