@@ -7,4 +7,4 @@ def accum(count, item):
 
 # res = func.reduce(lambda count, item: count+item, num)
 res = func.reduce(accum, num)
-print("res: "+res)
+print("res: ", res)
