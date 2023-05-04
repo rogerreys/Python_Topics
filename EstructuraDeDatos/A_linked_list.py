@@ -72,15 +72,3 @@ class SinglyLinkedList():
         self.size = 0
         self.head = None
 
-
-sll = SinglyLinkedList()
-sll.append("Vale")
-sll.append("Lucas")
-sll.append("Maria")
-sll.append("Ana")
-sll.__str__()
-
-sll.search("Pepe")
-
-sll.clear()
-sll.__str__()
